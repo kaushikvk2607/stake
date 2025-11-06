@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import { BallManager } from "../game/classes/BallManager";
 import axios from "axios";
+import { baseURL } from "../utils";
 
 
 export function Game() {
@@ -19,7 +20,7 @@ export function Game() {
         <div>
             <canvas ref={canvasRef} width="800" height="800"></canvas>
             <button onClick={async() => {
-                const response = await axios.post("http://localhost:3000/game", {data: 1});
+                const response = await axios.post(`${baseURL}/game`, {data: 1});
                 if (ballManager) {
                     ballManager.addBall(response.data.point);
                 }
