@@ -28,13 +28,14 @@ const MULTIPLIERS: {[ key: number ]: number} = {
     16: 16
 }
 
+
 app.post("/game", (req, res) => {
     let outcome = 0;
     const pattern = []
     for (let i = 0; i < TOTAL_DROPS; i++) {
         if (Math.random() > 0.5) {
             pattern.push("R")
-            outcome++;
+               outcome++;
         } else {
             pattern.push("L")
         }
