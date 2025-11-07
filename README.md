@@ -40,7 +40,7 @@ Stake is a full‑stack interactive physics simulation web app. The frontend is 
 
 ## Environment variables
 - Frontend:
-  - VITE_API_URL — base URL of backend API (example: https://stake-am1j.onrender.com). Set in `frontend/.env` or Vercel project settings.
+  - VITE_API_URL — base URL of backend API (example: [https://stake-am1j.onrender.com](https://stake-fawn-three.vercel.app/)). Set in `frontend/.env` or Vercel project settings.
 - Backend:
   - Use backend/.env or platform-specific config as needed (port, DB settings, etc).
 
