@@ -27,8 +27,7 @@ export const Footer = () => {
               <a href="https://github.com/kaushikvk2607" target="_blank">
                 <FaGithub size={30} />
               </a>
-            
-              
+              <p>made by vikas kaushik</p>
             </div>
           </div>
         </div>
